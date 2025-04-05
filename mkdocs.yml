@@ -1,48 +1,18 @@
 site_name: Документация Selectyre
 site_url: https://kkomissarov.github.io/selectyre-docs/
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+
 theme:
   name: material
   language: ru
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.path
-    - navigation.indexes
-    - navigation.expand
-    - navigation.tracking
-    - navigation.top
-    - toc.follow
-    - search.highlight
-    - search.suggest
-    - content.code.copy
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Переключить на тёмную тему
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Переключить на светлую тему
-  icon:
-    repo: fontawesome/brands/github
-  favicon: assets/favicon.png
-  logo: assets/logo.png
+    - toc.integrate
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list
-  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
