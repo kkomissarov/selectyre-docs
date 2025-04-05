@@ -1,4 +1,5 @@
 site_name: Документация Selectyre
+site_url: https://docs.selectyre.ru
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
