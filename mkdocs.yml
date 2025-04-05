@@ -1,0 +1,23 @@
+site_name: Документация Selectyre
+theme:
+  name: material
+  features:
+    - navigation.expand
+nav:
+  - Главная: index.md
+  - Файлы выгрузки:
+      - Ассортимент:
+          - JSON: files/assortment/json.md
+          - XML: files/assortment/xml.md
+          - CSV шины: files/assortment/csv_tires.md
+          - CSV диски: files/assortment/csv_wheels.md
+      - Остатки и Цены:
+          - JSON: files/availability/json.md
+          - XML: files/availability/xml.md
+          - CSV шины: files/availability/csv_tires.md
+          - CSV диски: files/availability/csv_wheels.md
+  - Настройка выгрузки в кабинете:
+    - Старая версия: old_version.md
+    - Новая версия: new_version.md
+    - Профили наценок: settings/profiles.md
+    - Файлы выгрузки: settings/export_files.md
