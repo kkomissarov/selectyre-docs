@@ -1,5 +1,4 @@
 site_name: Документация Selectyre
-site_url: https://kkomissarov.github.io/selectyre-docs/
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
@@ -7,10 +6,6 @@ use_directory_urls: true
 theme:
   name: material
   language: ru
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
 
 markdown_extensions:
   - pymdownx.emoji:
@@ -34,7 +29,5 @@ nav:
           - CSV шины: files/availability/csv_tires.md
           - CSV диски: files/availability/csv_wheels.md
   - Настройка выгрузки в кабинете:
-    - Старая версия: old_version.md
-    - Новая версия: new_version.md
     - Профили наценок: settings/profiles.md
     - Файлы выгрузки: settings/export_files.md
