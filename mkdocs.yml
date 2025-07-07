@@ -20,7 +20,11 @@ plugins:
 
 nav:
   - Главная: index.md
+  - Настройки профилей, наценок и ограничений файлов выгрузки:
+    - Профили наценок: settings/profiles.md
+    - Настройка файлов выгрузки: settings/export_files.md
   - Файлы выгрузки:
+      - Типы выгрузок: files/export_types.md
       - Ассортимент:
           - JSON: files/assortment/json.md
           - XML: files/assortment/xml.md
@@ -31,6 +35,3 @@ nav:
           - XML: files/availability/xml.md
           - CSV шины: files/availability/csv_tires.md
           - CSV диски: files/availability/csv_wheels.md
-  - Настройка выгрузки в кабинете:
-    - Профили наценок: settings/profiles.md
-    - Файлы выгрузки: settings/export_files.md
