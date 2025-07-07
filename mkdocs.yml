@@ -7,8 +7,6 @@ use_directory_urls: true
 theme:
   name: material
   language: ru
-  features:
-    - navigation.expand
 
 markdown_extensions:
   - pymdownx.emoji:
