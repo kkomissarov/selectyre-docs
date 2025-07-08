@@ -18,11 +18,11 @@ plugins:
 
 nav:
   - Главная: index.md
-  - Настройки профилей, наценок и ограничений файлов выгрузки:
-    - Профили наценок: settings/profiles.md
-    - Настройка файлов выгрузки: settings/export_files.md
+  - Настройки профилей наценок и ограничений файлов выгрузки: settings/profiles.md
   - Файлы выгрузки:
       - Типы выгрузок: files/export_types.md
+      - Настройка файлов выгрузки: settings/export_files.md
+      - Структура данных: files/data_structure.md
       - Ассортимент:
           - JSON: files/assortment/json.md
           - XML: files/assortment/xml.md
