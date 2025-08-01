@@ -93,6 +93,7 @@ XML-файл с ассортиментом товаров содержит ин�
     <p_full_name>NZ SH675 6.5x16 5*105 ET39 DIA56.6 BKF Литой</p_full_name>
     <p_brand>NZ</p_brand>
     <p_model>SH675</p_model>
+    <p_category>Легковые</p_category>
     <p_color>BKF</p_color>
     <p_human_readable_color>Черный и комбинации</p_human_readable_color>
     <p_width>6.50</p_width>

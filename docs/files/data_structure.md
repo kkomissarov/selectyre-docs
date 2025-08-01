@@ -67,6 +67,7 @@
 | `p_full_name`       | string   | Полное наименование |
 | `p_brand`           | string   | Производитель |
 | `p_model`           | string   | Модель |
+| `p_category`        | string   | Категория (например, "Легковые") |
 | `p_color`           | string   | Код цвета |
 | `p_human_readable_color` | string | Человекочитаемый цвет |
 | `p_width`           | string   | Ширина, дюймы |
