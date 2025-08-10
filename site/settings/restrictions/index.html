@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://docs.selectyre.ru/files/availability/xml/">
+        <link rel="canonical" href="https://docs.selectyre.ru/settings/restrictions/">
       
       
-        <link rel="prev" href="../json/">
+        <link rel="prev" href="../profiles/">
       
       
-        <link rel="next" href="../csv_tires/">
+        <link rel="next" href="../../files/export_types/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.0">
     
     
       
-        <title>XML - Документация Selectyre</title>
+        <title>Настройка профилей ограничений - Документация Selectyre</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.45e1311d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.45e1311d.min.css">
       
       
 
@@ -45,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xml-" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../../.." title="Документация Selectyre" class="md-header__button md-logo" aria-label="Документация Selectyre" data-md-component="logo">
+    <a href="../.." title="Документация Selectyre" class="md-header__button md-logo" aria-label="Документация Selectyre" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              XML
+              Настройка профилей ограничений
             
           </span>
         </div>
@@ -175,7 +175,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Документация Selectyre" class="md-nav__button md-logo" aria-label="Документация Selectyre" data-md-component="logo">
+    <a href="../.." title="Документация Selectyre" class="md-nav__button md-logo" aria-label="Документация Selectyre" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -193,7 +193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -213,7 +213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../settings/profiles/" class="md-nav__link">
+      <a href="../profiles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -230,10 +230,28 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../settings/restrictions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Настройка профилей ограничений
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -242,6 +260,78 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Профили ограничений выгрузки
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Быстрый старт
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Логика работы
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Доступные типы ограничений
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Примеры правил
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Рекомендации
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -250,21 +340,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -278,7 +366,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Файлы выгрузки
@@ -292,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../export_types/" class="md-nav__link">
+      <a href="../../files/export_types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -313,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../settings/export_files/" class="md-nav__link">
+      <a href="../export_files/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -334,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data_structure/" class="md-nav__link">
+      <a href="../../files/data_structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -392,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assortment/json/" class="md-nav__link">
+      <a href="../../files/assortment/json/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -413,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assortment/xml/" class="md-nav__link">
+      <a href="../../files/assortment/xml/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -434,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assortment/csv_tires/" class="md-nav__link">
+      <a href="../../files/assortment/csv_tires/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -455,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assortment/csv_wheels/" class="md-nav__link">
+      <a href="../../files/assortment/csv_wheels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -481,21 +569,19 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
         
           
           <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
@@ -509,7 +595,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             Остатки и Цены
@@ -523,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../json/" class="md-nav__link">
+      <a href="../../files/availability/json/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,30 +627,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    XML
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../files/availability/xml/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -573,71 +639,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Общая структура
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metainfo" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 metainfo — Метаданные
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tires" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛞 tires — Остатки шин
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wheels" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔘 wheels — Остатки дисков
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#xml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Особенности XML формата
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -650,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../csv_tires/" class="md-nav__link">
+      <a href="../../files/availability/csv_tires/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -671,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../csv_wheels/" class="md-nav__link">
+      <a href="../../files/availability/csv_wheels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,8 +718,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -729,43 +728,52 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Общая структура
+      🎯 Профили ограничений выгрузки
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#metainfo" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 metainfo — Метаданные
+      🚀 Быстрый старт
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tires" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      🛞 tires — Остатки шин
+      🧠 Логика работы
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#wheels" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      🔘 wheels — Остатки дисков
+      🧩 Доступные типы ограничений
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#xml" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Особенности XML формата
+      📘 Примеры правил
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Рекомендации
     </span>
   </a>
   
@@ -786,63 +794,78 @@
                   
 
 
-<h1 id="xml-">📦 Структура XML-файла с остатками и ценами</h1>
-<p>XML-файл с остатками и ценами содержит информацию о наличии товаров на складах и их ценах.</p>
-<p>📖 <strong>Подробное описание полей:</strong>
-- <strong>Метаданные</strong>: см. <a href="../../data_structure/#метаданные-metainfo">Структура данных → Метаданные</a>
-- <strong>Поля остатков</strong>: см. <a href="../../data_structure/#поля-остатков-и-цен">Структура данных → Поля остатков и цен</a></p>
-<h2 id="_1">Общая структура</h2>
-<p>Файл представляет собой XML-документ со следующей структурой:</p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; ?&gt;
-&lt;root&gt;
-  &lt;metainfo&gt;
-    &lt;!-- Метаинформация о выгрузке --&gt;
-  &lt;/metainfo&gt;
-  &lt;tires&gt;
-    &lt;!-- Информация о наличии и ценах шин --&gt;
-  &lt;/tires&gt;
-  &lt;wheels&gt;
-    &lt;!-- Информация о наличии и ценах дисков --&gt;
-  &lt;/wheels&gt;
-&lt;/root&gt;
-</code></pre>
+  <h1>Настройка профилей ограничений</h1>
+
+<h2 id="_1">🎯 Профили ограничений выгрузки</h2>
+<p>Профиль ограничений — это набор правил, который автоматически исключает товары из ваших выгрузок по выбранным критериям (бренд, диаметр, цена, склад, поставщик, скидка и др.).</p>
 <hr />
-<h2 id="metainfo">🧠 <code>metainfo</code> — Метаданные</h2>
-<p>Раздел с общей информацией о выгрузке. Описание полей см. в <a href="../../data_structure/#метаданные-metainfo">Структуре данных → Метаданные</a>.</p>
-<p>📌 <strong>Пример</strong>:</p>
-<pre><code class="language-xml">&lt;metainfo&gt;
-  &lt;utc_update_time&gt;2025-04-05 09:03:06.160749+00:00&lt;/utc_update_time&gt;
-  &lt;client_name&gt;mrnr&lt;/client_name&gt;
-  &lt;license_expire&gt;2025-04-05&lt;/license_expire&gt;
-&lt;/metainfo&gt;
-</code></pre>
+<h2 id="_2">🚀 Быстрый старт</h2>
+<p>1) Создайте профиль<br />
+   - Перейдите в «Профили ограничений» → «Создать профиль» → задайте понятное название, например "От 18 диаметра".</p>
+<p>2) Добавьте правила<br />
+   - Нажмите «Добавить новое правило» (создаёт группу условий).<br />
+   - Внутри правила нажмите «Условие» и заполните:<br />
+     - Тип ограничения (например, Бренд шин, Диаметр диска, Розничная цена)<br />
+     - Оператор (==, !=, &gt;, &lt; — зависит от типа)<br />
+     - Значение (для справочников — выпадающий список; для чисел — поле ввода; для логических — Да/Нет)</p>
+<p>3) Примените к выгрузке<br />
+   - В настройках файла выгрузки выберите «Профиль ограничений».<br />
+   - Сохраните файл — фильтрация применится автоматически при следующей генерации выгрузки.</p>
 <hr />
-<h2 id="tires">🛞 <code>tires</code> — Остатки шин</h2>
-<p>Набор элементов <code>item</code> с информацией о наличии и ценах шин. Описание полей см. в <a href="../../data_structure/#поля-остатков-и-цен">Структуре данных → Поля остатков и цен</a>.</p>
-<p>📌 <strong>Пример элемента</strong>:</p>
-<pre><code class="language-xml">&lt;item&gt;
-  &lt;code&gt;t557858&lt;/code&gt;
-  &lt;stock_name&gt;4x4sport_vladivostok&lt;/stock_name&gt;
-  &lt;stock_name_ru&gt;4x4sport Владивосток&lt;/stock_name_ru&gt;
-  &lt;wholesale_price&gt;23000.00&lt;/wholesale_price&gt;
-  &lt;quantity&gt;10&lt;/quantity&gt;
-  &lt;recommended_retail_price/&gt;
-  &lt;minimal_internet_price/&gt;
-  &lt;provider_key&gt;ETL28398000&lt;/provider_key&gt;
-  &lt;cae&gt;ETL28398000&lt;/cae&gt;
-  &lt;year/&gt;
-  &lt;sale&gt;false&lt;/sale&gt;
-  &lt;price&gt;23000&lt;/price&gt;
-  &lt;delivery_time&gt;0&lt;/delivery_time&gt;
-&lt;/item&gt;
-</code></pre>
-<hr />
-<h2 id="wheels">🔘 <code>wheels</code> — Остатки дисков</h2>
-<p>Набор элементов <code>item</code> с информацией о наличии и ценах дисков. Структура элементов идентична структуре элементов в разделе <code>tires</code>. Описание полей см. в <a href="../../data_structure/#поля-остатков-и-цен">Структуре данных → Поля остатков и цен</a>.</p>
-<h2 id="xml">Особенности XML формата</h2>
+<h2 id="_3">🧠 Логика работы</h2>
 <ul>
-<li>Пустые значения для опциональных полей представлены пустыми тегами (например, <code>&lt;recommended_retail_price/&gt;</code>)</li>
-<li>Булевы значения представлены как текст: <code>true</code> или <code>false</code> </li>
+<li>Внутри одного правила условия связаны логикой <strong>И</strong> (все условия должны выполниться).  </li>
+<li>Между правилами — логика <strong>ИЛИ</strong> (если выполнится любое правило, товар будет исключён).  </li>
+<li>Если ни одно правило не выполнено полностью — товар остаётся в выгрузке.  </li>
+</ul>
+<hr />
+<h2 id="_4">🧩 Доступные типы ограничений</h2>
+<p>Шины:
+- Сезон шин
+- Категория шин
+- Диаметр шин
+- Бренд шин</p>
+<p>Диски:
+- Тип дисков
+- Категория дисков
+- Диаметр диска
+- Бренд дисков</p>
+<p>Предложения (для шин и дисков):
+- Оптовая цена
+- Розничная цена (вычисляется с учётом вашего профиля наценок)
+- Товар со скидкой
+- Количество на складе
+- Склад
+- Поставщик</p>
+<p>Примечания:
+- Для справочников (бренд, диаметр, склад, поставщик) значения подставляются из системы.  </p>
+<hr />
+<h2 id="_5">📘 Примеры правил</h2>
+<ul>
+<li>
+<p>Исключить товары Michelin с диаметром &lt; 20:<br />
+  Правило 1: Бренд шин == Michelin И Диаметр шины &lt; 20</p>
+</li>
+<li>
+<p>Исключить все товары с розничной ценой &gt; 50 000:<br />
+  Правило 1: Розничная цена &gt; 50000</p>
+</li>
+<li>
+<p>Исключить товары на складе «Краснодар» со скидкой:<br />
+  Правило 1: Склад == Краснодар И Товар со скидкой == Да</p>
+</li>
+<li>
+<p>Комбинация «ИЛИ» между правилами:<br />
+  Правило 1: Бренд == Michelin И Диаметр &lt; 20<br />
+  Правило 2: Розничная цена &gt; 50000<br />
+  Результат: исключаются товары, подходящие под Правило 1 ИЛИ под Правило 2.</p>
+</li>
+</ul>
+<hr />
+<h2 id="_6">💡 Рекомендации</h2>
+<ul>
+<li>Давайте профилям понятные названия: «Шины R16+ без скидки», «Дороже 10000».  </li>
+<li>Логически разные наборы условий оформляйте отдельными правилами (группами).  </li>
 </ul>
 
 
@@ -890,10 +913,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>
