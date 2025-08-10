@@ -18,7 +18,8 @@ plugins:
 
 nav:
   - Главная: index.md
-  - Настройки профилей наценок и ограничений файлов выгрузки: settings/profiles.md
+  - Настройка профилей наценок: settings/profiles.md
+  - Настройка профилей ограничений: settings/restrictions.md
   - Файлы выгрузки:
       - Типы выгрузок: files/export_types.md
       - Настройка файлов выгрузки: settings/export_files.md
