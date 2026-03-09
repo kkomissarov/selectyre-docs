@@ -18,7 +18,9 @@ plugins:
 
 nav:
   - Главная: index.md
-  - Настройка профилей наценок: settings/profiles.md
+  - Настройки профилей наценок:
+      - Общая информация о профилях наценок: settings/profiles/general.md
+      - Правила применения наценок: settings/profiles/rules.md
   - Настройка профилей ограничений: settings/restrictions.md
   - Файлы выгрузки:
       - Типы выгрузок: files/export_types.md
@@ -34,3 +36,4 @@ nav:
           - XML: files/availability/xml.md
           - CSV шины: files/availability/csv_tires.md
           - CSV диски: files/availability/csv_wheels.md
+      - Модуль для Битрикс: files/bitrix_module.md
