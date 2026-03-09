@@ -1,0 +1,1838 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.selectyre.ru/files/bitrix_module/">
+      
+      
+        <link rel="prev" href="../availability/csv_wheels/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.0">
+    
+    
+      
+        <title>Модуль для Битрикс - Документация Selectyre</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.45e1311d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="Документация Selectyre" class="md-header__button md-logo" aria-label="Документация Selectyre" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Документация Selectyre
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Модуль для Битрикс
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Документация Selectyre" class="md-nav__button md-logo" aria-label="Документация Selectyre" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Документация Selectyre
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Главная
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Настройки профилей наценок
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Настройки профилей наценок
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/profiles/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Общая информация о профилях наценок
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/profiles/rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Правила применения наценок
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/restrictions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Настройка профилей ограничений
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Файлы выгрузки
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Файлы выгрузки
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Типы выгрузок
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/export_files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Настройка файлов выгрузки
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Структура данных
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ассортимент
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ассортимент
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assortment/json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assortment/xml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assortment/csv_tires/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSV шины
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assortment/csv_wheels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSV диски
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Остатки и Цены
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Остатки и Цены
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../availability/json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../availability/xml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../availability/csv_tires/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSV шины
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../availability/csv_wheels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSV диски
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Модуль для Битрикс
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Модуль для Битрикс
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Обзор модуля
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Обзор модуля">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Назначение модуля
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Основные возможности
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Поддерживаемые типы товаров
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Системные требования
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Системные требования">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Минимальные требования
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Рекомендуемые требования
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Установка и настройка
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Установка и настройка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Шаг 1: Установка модуля
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-2-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Шаг 2: Настройка API ключей
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Шаг 3: Создание инфоблоков
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Шаг 4: Настройка интеграции
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Работа с модулем
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Работа с модулем">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Ручной импорт товаров
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Обновление цен и остатков
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Управление фотографиями
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Удаление устаревших товаров
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Управление логами
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Автоматизация через Cron
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Автоматизация через Cron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Рекомендуемое расписание
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Готовые ссылки для Cron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Настройка Cron на сервере
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Альтернативные команды
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Решение проблем
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Решение проблем">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Диагностика проблем
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Частые проблемы и решения
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Где искать логи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 Порядок диагностики
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Часто задаваемые вопросы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Часто задаваемые вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Как получить API ключи?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Сколько времени занимает импорт?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Как часто нужно обновлять данные?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Безопасно ли автоматическое удаление?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Какие настройки PHP рекомендуются?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6 Как оптимизировать работу для больших каталогов?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лицензионное соглашение
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Обзор модуля
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Обзор модуля">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Назначение модуля
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Основные возможности
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Поддерживаемые типы товаров
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Системные требования
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Системные требования">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Минимальные требования
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Рекомендуемые требования
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Установка и настройка
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Установка и настройка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Шаг 1: Установка модуля
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-2-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Шаг 2: Настройка API ключей
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Шаг 3: Создание инфоблоков
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Шаг 4: Настройка интеграции
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Работа с модулем
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Работа с модулем">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Ручной импорт товаров
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Обновление цен и остатков
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Управление фотографиями
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Удаление устаревших товаров
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Управление логами
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Автоматизация через Cron
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Автоматизация через Cron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Рекомендуемое расписание
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Готовые ссылки для Cron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Настройка Cron на сервере
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Альтернативные команды
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Решение проблем
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Решение проблем">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Диагностика проблем
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Частые проблемы и решения
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Где искать логи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 Порядок диагностики
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Часто задаваемые вопросы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Часто задаваемые вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Как получить API ключи?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Сколько времени занимает импорт?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Как часто нужно обновлять данные?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Безопасно ли автоматическое удаление?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Какие настройки PHP рекомендуются?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6 Как оптимизировать работу для больших каталогов?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лицензионное соглашение
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">Модуль для Битрикс</h1>
+<h2 id="1">1. Обзор модуля</h2>
+<h3 id="11">1.1 Назначение модуля</h3>
+<p>Модуль "Интеграция с selectyre" предназначен для автоматической синхронизации каталога товаров между платформой selectyre и интернет-магазином на 1С-Битрикс.</p>
+<h3 id="12">1.2 Основные возможности</h3>
+<ul>
+<li>✅ Автоматический импорт товаров с полными характеристиками</li>
+<li>✅ Обновление цен и остатков в реальном времени</li>
+<li>✅ Загрузка фотографий товаров с автоматическим обновлением</li>
+<li>✅ Умное распределение по категориям и разделам</li>
+<li>✅ Автоматическое удаление устаревших товаров</li>
+<li>✅ Полная автоматизация через Cron задачи</li>
+<li>✅ Детальное логирование всех операций</li>
+</ul>
+<h3 id="13">1.3 Поддерживаемые типы товаров</h3>
+<ul>
+<li>📦 Категория 1:</li>
+<li>Подкатегория 1.1</li>
+<li>Подкатегория 1.2</li>
+<li>Подкатегория 1.3</li>
+<li>📦 Категория 2:</li>
+<li>Подкатегория 2.1</li>
+<li>Подкатегория 2.2</li>
+<li>Подкатегория 2.3</li>
+</ul>
+<h2 id="2">2. Системные требования</h2>
+<h3 id="21">2.1 Минимальные требования</h3>
+<ul>
+<li>1С-Битрикс: Версия 20.0 и выше</li>
+<li>PHP: Версия 7.4 и выше</li>
+<li>Память PHP: не менее 128MB</li>
+<li>Обязательные модули Битрикс:</li>
+<li>Информационные блоки</li>
+<li>Торговый каталог</li>
+</ul>
+<h3 id="22">2.2 Рекомендуемые требования</h3>
+<ul>
+<li>Память PHP: 512MB или больше</li>
+<li>Время выполнения: 300 секунд</li>
+<li>Доступ к API: <a href="https://selectyre.ru">selectyre.ru</a></li>
+<li>Cron поддержка: для автоматизации</li>
+<li>Highload-блоки: для больших каталогов</li>
+</ul>
+<h2 id="3">3. Установка и настройка</h2>
+<h3 id="31-1">3.1 Шаг 1: Установка модуля</h3>
+<ol>
+<li>Скачайте архив <code>selectyre.integration.zip</code></li>
+<li>Войдите в административную панель Битрикс</li>
+<li>Перейдите в раздел: Контент → файлы и папки → <code>bitrix</code> → <code>modules</code></li>
+<li>Нажмите «Загрузить файл», выберите архив и подтвердите сохранение</li>
+<li>Найдите загруженный архив в списке модулей по тому же пути и распакуйте его, кликнув по иконке «сэндвич».</li>
+<li>Откройте раздел: Marketplace (установленные решения), найдите модуль «Интеграция с Selectyre (selectyre.integration)» и установите его</li>
+</ol>
+<p>📍 Расположение модуля в админке:</p>
+<p>После установки модуль будет доступен по пути:</p>
+<p><strong>Рабочий стол → Магазин → Интеграция с selectyre</strong></p>
+<h3 id="32-2-api">3.2 Шаг 2: Настройка API ключей</h3>
+<ol>
+<li>Получите API ключи в личном кабинете selectyre (<a href="https://selectyre.ru">selectyre.ru</a>)</li>
+<li>Перейдите в <strong>Рабочий стол → Магазин → Интеграция с selectyre</strong></li>
+<li>Заполните поля: (про формат и какие выгрузки)</li>
+<li>API KEY IMPORT — для импорта товаров</li>
+<li>API KEY UPDATE — для обновления цен</li>
+<li>Нажмите «Сохранить ключи»</li>
+</ol>
+<h3 id="33-3">3.3 Шаг 3: Создание инфоблоков</h3>
+<ol>
+<li>В разделе <strong>«Создание инфоблоков»</strong> нажмите соответствующие кнопки:</li>
+<li>«Создать каталог [Категория1]»</li>
+<li>«Создать каталог [Категория2]»</li>
+<li>«Создать каталог [Категория3]» (при необходимости)</li>
+<li>Модуль автоматически создаст структуру с:</li>
+<li>Необходимыми свойствами товаров</li>
+<li>Разделами по умолчанию</li>
+<li>Настройками ЧПУ с проверкой уникальности</li>
+<li>Торговыми предложениями</li>
+<li>Структурой для фильтров</li>
+</ol>
+<h3 id="34-4">3.4 Шаг 4: Настройка интеграции</h3>
+<ol>
+<li>В разделе <strong>«Выбор инфоблоков для интеграции»</strong> назначьте созданные инфоблоки типам товаров</li>
+<li>Пример правильной связки:</li>
+<li>[ТипТовара1] → инфоблок «[Категория1]»</li>
+<li>[ТипТовара2] → инфоблок «[Категория2]»</li>
+<li>Нажмите «Сохранить настройки инфоблоков»</li>
+</ol>
+<h2 id="4">4. Работа с модулем</h2>
+<p>📍 Доступ к модулю:</p>
+<p>Все операции выполняются через административный интерфейс:</p>
+<p><strong>Рабочий стол → Магазин → Интеграция с selectyre</strong></p>
+<h3 id="41">4.1 Ручной импорт товаров</h3>
+<ol>
+<li>Перейдите в <strong>Рабочий стол → Магазин → Интеграция с selectyre</strong></li>
+<li>Откройте раздел «Импорт и обновление данных»</li>
+<li>Для нужного типа товаров нажмите кнопку «Добавление»</li>
+<li>Следите за прогресс-баром выполнения</li>
+<li>Проверьте результат в журнале операций</li>
+</ol>
+<p>Что происходит при импорте:</p>
+<ul>
+<li>Создание разделов брендов и моделей</li>
+<li>Генерация товаров с полными характеристиками</li>
+<li>Загрузка и привязка фотографий</li>
+<li>Настройка ЧПУ и мета-тегов</li>
+<li>Создание торговых предложений</li>
+</ul>
+<h3 id="42">4.2 Обновление цен и остатков</h3>
+<ol>
+<li>Используйте кнопку «Обновление» для нужного типа товаров</li>
+<li>Модуль автоматически выполнит:</li>
+<li>Обнуление текущих остатков</li>
+<li>Загрузку актуальных цен</li>
+<li>Обновление наличия товаров</li>
+<li>Корректировку свойств товаров</li>
+</ol>
+<h3 id="43">4.3 Управление фотографиями</h3>
+<p>Модуль автоматически отслеживает изменения фотографий через поле <code>photo_last_modified</code>. При изменении даты модификации фото автоматически обновляется.</p>
+<p>Ручное обновление фото:</p>
+<pre><code class="language-bash"># Все товары категории 1
+curl &quot;https://ваш-сайт/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category1&amp;action=update_pics&quot;
+
+# Все товары категории 2
+curl &quot;https://ваш-сайт/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category2&amp;action=update_pics&quot;
+</code></pre>
+<h3 id="44">4.4 Удаление устаревших товаров</h3>
+<p>Модуль автоматически удаляет товары, отсутствующие в текущем каталоге selectyre, поддерживая ваш каталог в актуальном состоянии.</p>
+<p>Команды для удаления:</p>
+<pre><code class="language-bash"># Удаление товаров категории 1
+curl &quot;https://ваш-сайт/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category1&amp;action=delete&quot;
+
+# Удаление товаров категории 2
+curl &quot;https://ваш-сайт/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category2&amp;action=delete&quot;
+</code></pre>
+<h3 id="45">4.5 Управление логами</h3>
+<p>Модуль ведет детальное логирование всех операций:</p>
+<p>Типы логов:</p>
+<ul>
+<li>add — импорт товаров</li>
+<li>up — обновление данных</li>
+<li>photo — работа с фото</li>
+<li>del — удаление товаров</li>
+<li>error — ошибки</li>
+</ul>
+<p>Где смотреть логи:</p>
+<ul>
+<li>Админка Битрикс → Настройки → Журнал событий</li>
+<li>Раздел «Управление логами» в модуле</li>
+<li>Файлы в <code>/bitrix/modules/selectyre.integration/logs/</code></li>
+</ul>
+<h2 id="5-cron">5. Автоматизация через Cron</h2>
+<h3 id="51">5.1 Рекомендуемое расписание</h3>
+<ul>
+<li>Импорт: два раза в день</li>
+<li>Остатки и цены: ежечасно</li>
+<li>Обновление фото и параметров: раз в неделю</li>
+</ul>
+<h3 id="52-cron">5.2 Готовые ссылки для Cron</h3>
+<p>Модуль автоматически генерирует правильные URL в разделе «Ссылки для cron». Просто скопируйте нужные команды из админки модуля.</p>
+<h3 id="53-cron">5.3 Настройка Cron на сервере</h3>
+<p>Пример настройки через <code>crontab -e</code>:</p>
+<pre><code class="language-bash"># Основные задачи
+0 */6 * * * curl &quot;https://site.ru/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category1&amp;action=import&quot;
+0 3 * * * curl &quot;https://site.ru/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category1&amp;action=update&quot;
+0 4 * * * curl &quot;https://site.ru/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category1&amp;action=update&quot;
+
+# Обновление фото и параметров
+0 5 * * 1 curl &quot;https://site.ru/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category1&amp;action=update_pics&quot;
+0 6 * * 1 curl &quot;https://site.ru/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category2&amp;action=update_pics&quot;
+
+# Удаление товаров
+0 1 * * 0 curl &quot;https://site.ru/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category1&amp;action=delete&quot;
+30 1 * * 0 curl &quot;https://site.ru/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category2&amp;action=delete&quot;
+</code></pre>
+<h3 id="54">5.4 Альтернативные команды</h3>
+<p>Если <code>curl</code> недоступен, используйте <code>wget</code>:</p>
+<pre><code class="language-bash">0 */6 * * * wget -q -O - &quot;https://site.ru/bitrix/admin/selectyre.integration_cron.php?lang=ru&amp;type=category1&amp;action=import&quot;
+</code></pre>
+<h2 id="6">6. Решение проблем</h2>
+<h3 id="61">6.1 Диагностика проблем</h3>
+<ol>
+<li>Перейдите в <strong>Рабочий стол → Магазин → Интеграция с selectyre</strong></li>
+<li>Проверьте статус интеграции — должен быть «Настроена»</li>
+<li>Проверьте логи модуля в разделе «Управление логами»</li>
+<li>Убедитесь в доступности <a href="https://selectyre.ru">selectyre.ru</a></li>
+<li>Проверьте корректность API ключей</li>
+</ol>
+<h3 id="62">6.2 Частые проблемы и решения</h3>
+<p>❌ Проблема: не создаются инфоблоки<br />
+✅ Решение:</p>
+<ul>
+<li>Проверьте права доступа к модулю «Информационные блоки»</li>
+<li>Убедитесь, что установлен модуль «Торговый каталог»</li>
+<li>Проверьте логи в админке Битрикс</li>
+</ul>
+<p>❌ Проблема: не загружаются товары<br />
+✅ Решение:</p>
+<ul>
+<li>Проверьте корректность API ключей</li>
+<li>Убедитесь, что выбран инфоблок для интеграции</li>
+<li>Проверьте доступность <code>selectyre.ru</code></li>
+<li>Проверьте наличие пробелов в начале/конце ключей</li>
+</ul>
+<p>❌ Проблема: не обновляются остатки<br />
+✅ Решение:</p>
+<ul>
+<li>Проверьте настройки Cron задач</li>
+<li>Убедитесь, что URL в Cron правильные</li>
+<li>Проверьте логи выполнения Cron</li>
+<li>Убедитесь, что используется KEY UPDATE</li>
+</ul>
+<p>❌ Проблема: не загружаются фото<br />
+✅ Решение:</p>
+<ul>
+<li>Проверьте доступ к интернету с сервера</li>
+<li>Убедитесь, что папка <code>/upload/</code> доступна для записи</li>
+<li>Проверьте настройки PHP (<code>allow_url_fopen</code>)</li>
+<li>Проверьте поле <code>photo_last_modified</code> в товарах</li>
+</ul>
+<h3 id="63">6.3 Где искать логи</h3>
+<ul>
+<li>Админка Битрикс → Настройки → Журнал событий</li>
+<li>Фильтр по модулю: «[название.модуля]»</li>
+<li>Логи модуля: <code>/bitrix/modules/[название.модуля]/logs/</code></li>
+<li>Логи PHP: проверьте <code>error_log</code> сервера</li>
+</ul>
+<h3 id="64">6.4 Порядок диагностики</h3>
+<ol>
+<li>Проверьте статус интеграции (должен быть «Настроена»)</li>
+<li>Проверьте выбор инфоблоков для каждого типа товаров</li>
+<li>Попробуйте ручной импорт небольшого количества товаров</li>
+<li>Проверьте логи модуля (все типы: add, up, photo, del, error)</li>
+<li>Обратитесь в техническую поддержку с логами</li>
+</ol>
+<h2 id="7">7. Часто задаваемые вопросы</h2>
+<h3 id="71-api">7.1 Как получить API ключи?</h3>
+<p>Зарегистрируйтесь на <a href="https://selectyre.ru">selectyre.ru</a> и обратитесь в техническую поддержку для получения API ключей. Ключи предоставляются после регистрации и настройки партнерских отношений.</p>
+<h3 id="72">7.2 Сколько времени занимает импорт?</h3>
+<p>Для каталога 50,000+ товаров процесс может занять 10–30 минут. Не прерывайте операцию! Для больших каталогов рекомендуется увеличить <code>memory_limit</code> и <code>max_execution_time</code>.</p>
+<h3 id="73">7.3 Как часто нужно обновлять данные?</h3>
+<ul>
+<li>Цены и остатки: ежечасно</li>
+<li>Фотографии: 1–2 раза в неделю</li>
+<li>Полный импорт: 1–2 раз в день</li>
+<li>Удаление товаров: 1 раз в неделю</li>
+</ul>
+<h3 id="74">7.4 Безопасно ли автоматическое удаление?</h3>
+<p>Да, модуль удаляет только товары, отсутствующие в текущем каталоге selectyre. Все операции логируются. Рекомендуется настроить резервное копирование базы данных.</p>
+<h3 id="75-php">7.5 Какие настройки PHP рекомендуются?</h3>
+<pre><code class="language-ini">memory_limit = 512M
+max_execution_time = 300
+max_input_vars = 3000
+allow_url_fopen = On
+display_errors = Off ; на продакшене
+</code></pre>
+<h3 id="76">7.6 Как оптимизировать работу для больших каталогов?</h3>
+<ul>
+<li>Увеличьте <code>memory_limit</code> до 1024M</li>
+<li>Установите <code>max_execution_time = 600</code></li>
+<li>Используйте разделение на пакеты в Cron</li>
+<li>Настройте кеширование в Битрикс</li>
+<li>Используйте отдельный сервер для Cron задач</li>
+</ul>
+<h2 id="_2">Лицензионное соглашение</h2>
+<p>Права и обязанности:</p>
+<ul>
+<li>✅ Модуль можно использовать на неограниченном количестве доменов</li>
+<li>✅ Возможна модификация кода для собственных нужд</li>
+<li>❌ Запрещено распространение модуля без согласия автора</li>
+<li>❌ Запрещено удаление копирайтов и информации об авторе</li>
+<li>❌ Техническая поддержка сервиса не оказывает услуги по установке и настройке модуля (при необходимости воспользуетесь услугами вашей технической поддержки или сторонних специалистов)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
